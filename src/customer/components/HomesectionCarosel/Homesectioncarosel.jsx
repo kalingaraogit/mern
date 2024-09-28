@@ -12,7 +12,7 @@ const Homesectioncarosel = () => {
   const responsive = {
     0: { items: 1 },
     720: { items: 3 },
-    1024: { items: 5.5 },
+    1024: { items: 5.4 },
   };
   // const items = [1,1,1,1,1,1,1,1,1,1,1,].map((item) => <Homesectioncard />);
   const items = mens_kurta.slice(0,10).map((item) => <Homesectioncard product={item}/>);
