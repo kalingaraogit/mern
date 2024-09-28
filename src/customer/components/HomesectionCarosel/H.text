@@ -1,0 +1,55 @@
+import React from "react";
+import Homesectioncard from "../Homesectioncard/Homesectioncard";
+import './Homesectioncarosel'
+
+const Homesectioncarosel = () => {
+  const items = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
+    <div key={index} style={{ minWidth: '200px', margin: '0 10px' }}>
+      <Homesectioncard />
+    </div>
+  ));
+
+  return (
+    <div className="px-4 lg:px-8 border border-black">
+      <div className="relative p-5">
+        {/* Scrollable container */}
+        <div
+          style={{
+            display: "flex",
+            overflowX: "auto",  // Enables horizontal scrolling
+            scrollbarWidth: "none",  // Hides scrollbar in Firefox
+            WebkitOverflowScrolling: "touch",  // Adds smooth scrolling on mobile
+            gap: "16px", // Add spacing between items
+          }}
+          className="hide-scrollbar"  // Class to hide scrollbar in most browsers
+        >
+          {items}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Homesectioncarosel;
+
+
+
+
+
+
+
+
+CSS to hide scrollbar for most browsers
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
+  }
+  
+
+
+
+  
