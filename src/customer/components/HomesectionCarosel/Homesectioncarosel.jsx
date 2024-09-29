@@ -29,7 +29,7 @@ const Homesectioncarosel = () => {
         disableDotsControls
       />
       <Button variant="contined" className="z-10 bg-white " sx={{position:'absolute',top:'8rem', right:'0rem',
-         transform:"translateX(50%) rotate(90deg)",bgcolor:"white", }}>
+         transform:"translateX(51%) rotate(90deg)",bgcolor:"white", }}>
         <KeyboardArrowLeftIcon sx={{transform:"rotate(90deg)",color:"black"}}/>
       </Button>
       <Button variant="contined" className="z-10 bg-white " sx={{position:'absolute',top:'8rem', left:'0rem',
