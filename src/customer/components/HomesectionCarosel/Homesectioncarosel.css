@@ -1,4 +1,4 @@
-CSS to hide scrollbar for most browsers
+/* CSS to hide scrollbar for most browsers */
 .hide-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
